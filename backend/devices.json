@@ -1,0 +1,112 @@
+[
+  {
+    "id": "device-001",
+    "name": "Traffic Sensor Alpha",
+    "status": "online",
+    "coordinates": {
+      "lat": 44.2312,
+      "lng": -76.486
+    },
+    "systemStats": {
+      "cpuUsage": 45,
+      "ramUsage": 60,
+      "temperature": 42,
+      "uptime": 168.5
+    },
+    "geohash": "f244c0b2cc2c",
+    "deviceType": "Traffic Sensor",
+    "model": "TS-2000X",
+    "location": "Princess St & Ontario St",
+    "lastSeen": "2025-08-05T20:21:05.307Z",
+    "ipAddress": "192.168.1.100",
+    "userAgent": "TrafficSensor/1.0"
+  },
+  {
+    "id": "device-002",
+    "name": "Environmental Monitor Beta",
+    "status": "online",
+    "coordinates": {
+      "lat": 44.228,
+      "lng": -76.4951
+    },
+    "systemStats": {
+      "cpuUsage": 25,
+      "ramUsage": 40,
+      "temperature": 38,
+      "uptime": 240.2
+    },
+    "geohash": "f244c0b1a8b1",
+    "deviceType": "Environmental Sensor",
+    "model": "ENV-500",
+    "location": "Queen's University Campus",
+    "lastSeen": "2025-08-05T20:21:05.307Z",
+    "ipAddress": "192.168.1.101",
+    "userAgent": "EnvironmentalSensor/2.1"
+  },
+  {
+    "id": "device-003",
+    "name": "Security Camera Gamma",
+    "status": "offline",
+    "coordinates": {
+      "lat": 44.235,
+      "lng": -76.48
+    },
+    "systemStats": {
+      "cpuUsage": 80,
+      "ramUsage": 85,
+      "temperature": 55,
+      "uptime": 72.1
+    },
+    "geohash": "f244c0b4d5e2",
+    "deviceType": "Security Camera",
+    "model": "SC-HD-Pro",
+    "location": "City Hall Area",
+    "lastSeen": "2025-08-05T19:21:05.307Z",
+    "ipAddress": "192.168.1.102",
+    "userAgent": "SecurityCamera/3.0"
+  },
+  {
+    "id": "device-1754426535339-slz524j58",
+    "name": "Destin PC",
+    "status": "online",
+    "coordinates": {
+      "lat": 44.253184,
+      "lng": -76.5853696
+    },
+    "systemStats": {
+      "cpuUsage": 40,
+      "ramUsage": 70,
+      "temperature": 52,
+      "uptime": 32.79258541397889
+    },
+    "geohash": "f244cn47fwsu1",
+    "deviceType": "Security Camera",
+    "model": "PC Model Num",
+    "location": "Home",
+    "lastSeen": "2025-08-05T20:42:15.339Z",
+    "ipAddress": "142.113.238.81",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+  },
+  {
+    "id": "device-1754428644349-wrzqwaex6",
+    "name": "IoT Sensor - 1754428644245",
+    "status": "online",
+    "coordinates": {
+      "lat": 44.253184,
+      "lng": -76.5853696
+    },
+    "systemStats": {
+      "cpuUsage": 87,
+      "ramUsage": 66,
+      "temperature": 43,
+      "uptime": 391.116018491396
+    },
+    "geohash": "f244c9is6muqz",
+    "deviceType": "IoT Sensor",
+    "model": "Win32 Device",
+    "location": "Kingston, ON",
+    "lastSeen": "2025-08-05T21:17:24.349Z",
+    "ipAddress": "142.113.238.81",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+  }
+]

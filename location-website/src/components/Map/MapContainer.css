@@ -1,0 +1,224 @@
+.app-content {
+    padding: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.map-wrapper {
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    background: white;
+}
+
+.map-container {
+    position: relative;
+    height: 65vh;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Ensure Leaflet map takes full space */
+.leaflet-container {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+/* Reset any potential conflicting styles */
+.leaflet-container, 
+.leaflet-container * {
+    box-sizing: border-box;
+}
+
+.map-info-panel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    z-index: 1000;
+    min-width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.map-info-panel:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.map-info-panel h3 {
+    margin: 0 0 15px 0;
+    color: #1e293b;
+    font-size: 1.2em;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.map-info-panel h3::before {
+    content: '🗺️';
+    font-size: 1.1em;
+}
+
+.map-info-panel p {
+    margin: 8px 0;
+    color: #64748b;
+    font-size: 0.95em;
+    font-weight: 500;
+}
+
+.bounds-info {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.bounds-info h4 {
+    margin: 0 0 12px 0;
+    color: #1e293b;
+    font-size: 1em;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.bounds-info h4::before {
+    content: '📍';
+    font-size: 0.9em;
+}
+
+.loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #64748b;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border-radius: 20px;
+    gap: 15px;
+}
+
+.loading::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    border: 4px solid #e2e8f0;
+    border-top: 4px solid #667eea;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Device popup styles */
+.device-popup {
+    min-width: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.device-popup h3 {
+    margin: 0 0 12px 0;
+    color: #1e293b;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.status-indicator {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-indicator.online {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(5, 150, 105, 0.2));
+    color: #065f46;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.status-indicator.offline {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.2), rgba(220, 38, 38, 0.2));
+    color: #7f1d1d;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.status-indicator.maintenance {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(217, 119, 6, 0.2));
+    color: #92400e;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.device-details p {
+    margin: 6px 0;
+    font-size: 0.95em;
+    color: #475569;
+    font-weight: 500;
+}
+
+.system-stats {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    font-size: 0.85em;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.stat-row strong {
+    color: #1e293b;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .map-container {
+        height: 50vh; /* Smaller on tablets */
+    }
+    
+    .loading {
+        height: 50vh;
+    }
+    
+    .map-info-panel {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-top: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+    .map-container {
+        height: 40vh; /* Even smaller on phones */
+    }
+    
+    .loading {
+        height: 40vh;
+    }
+}
