@@ -19,7 +19,18 @@
     "location": "Princess St & Ontario St",
     "lastSeen": "2025-08-05T20:21:05.307Z",
     "ipAddress": "192.168.1.100",
-    "userAgent": "TrafficSensor/1.0"
+    "userAgent": "TrafficSensor/1.0",
+    "manufacturer": "TechSensor Inc.",
+    "specifications": [
+      "Wireless connectivity: WiFi 802.11n",
+      "Power: Solar panel with battery backup",
+      "Range: 100m detection radius",
+      "Weather resistant: IP67 rating"
+    ],
+    "resources": [
+      { "name": "User Manual", "link": "https://example.com/manual" },
+      { "name": "API Documentation", "link": "https://example.com/api" }
+    ]
   },
   {
     "id": "device-002",
@@ -41,7 +52,18 @@
     "location": "Queen's University Campus",
     "lastSeen": "2025-08-05T20:21:05.307Z",
     "ipAddress": "192.168.1.101",
-    "userAgent": "EnvironmentalSensor/2.1"
+    "userAgent": "EnvironmentalSensor/2.1",
+    "manufacturer": "EcoTech Solutions",
+    "specifications": [
+      "Sensors: Temperature, Humidity, Air Quality",
+      "Data logging: 1000 readings storage",
+      "Connectivity: LoRaWAN",
+      "Battery life: 2 years"
+    ],
+    "resources": [
+      { "name": "Setup Guide", "link": "https://example.com/setup" },
+      { "name": "Calibration Tool", "link": "https://example.com/calibration" }
+    ]
   },
   {
     "id": "device-003",
@@ -63,50 +85,17 @@
     "location": "City Hall Area",
     "lastSeen": "2025-08-05T19:21:05.307Z",
     "ipAddress": "192.168.1.102",
-    "userAgent": "SecurityCamera/3.0"
-  },
-  {
-    "id": "device-1754426535339-slz524j58",
-    "name": "Destin PC",
-    "status": "online",
-    "coordinates": {
-      "lat": 44.253184,
-      "lng": -76.5853696
-    },
-    "systemStats": {
-      "cpuUsage": 40,
-      "ramUsage": 70,
-      "temperature": 52,
-      "uptime": 32.79258541397889
-    },
-    "geohash": "f244cn47fwsu1",
-    "deviceType": "Security Camera",
-    "model": "PC Model Num",
-    "location": "Home",
-    "lastSeen": "2025-08-05T20:42:15.339Z",
-    "ipAddress": "142.113.238.81",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-  },
-  {
-    "id": "device-1754428644349-wrzqwaex6",
-    "name": "IoT Sensor - 1754428644245",
-    "status": "online",
-    "coordinates": {
-      "lat": 44.253184,
-      "lng": -76.5853696
-    },
-    "systemStats": {
-      "cpuUsage": 87,
-      "ramUsage": 66,
-      "temperature": 43,
-      "uptime": 391.116018491396
-    },
-    "geohash": "f244c9is6muqz",
-    "deviceType": "IoT Sensor",
-    "model": "Win32 Device",
-    "location": "Kingston, ON",
-    "lastSeen": "2025-08-05T21:17:24.349Z",
-    "ipAddress": "142.113.238.81",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+    "userAgent": "SecurityCamera/3.0",
+    "manufacturer": "SecureVision Corp",
+    "specifications": [
+      "Resolution: 4K Ultra HD",
+      "Night vision: 50m infrared range",
+      "Storage: 1TB local storage",
+      "Streaming: H.264 compression"
+    ],
+    "resources": [
+      { "name": "Installation Guide", "link": "https://example.com/install" },
+      { "name": "Mobile App", "link": "https://example.com/mobile" }
+    ]
   }
 ]
